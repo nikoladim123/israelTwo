@@ -544,6 +544,7 @@ input[type='radio']{
   margin-right: 1vw;
 }
 
+/* simsize */
 .selectSimSize{
   transition: 1s;
   height: 0vw;
@@ -560,6 +561,19 @@ input[type='radio']{
   margin-top: -0.2vw;
 }
 
+/* selectNO */
+.selectedNo{
+  transition: 1s;
+  height: 0;
+  overflow: hidden;
+  /* height: 16vw; */
+  text-align: justify;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: 29.282vw;
+  background-color: rgb(255,213,108);
+  box-shadow: 0px 0px 9.714vw 0.1vw rgba(0,0,0,.3);
+}
 
 
 

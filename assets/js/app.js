@@ -29,6 +29,11 @@ var selectSimSize = document.getElementById('selectSimSize');
 var simFullSize = document.getElementById('simFullSize');
 var simMicro = document.getElementById('simMicro');
 var nanoSim = document.getElementById('nanoSim');
+  //selected NO box
+var selectedNo = document.getElementById('selectedNo');
+  //selected not sure box
+var notSure = document.getElementById('notSure');
+
 
 // plan big box click
 // plan big box click
@@ -60,8 +65,27 @@ platinumPlan.addEventListener('click',()=>{
 // unlockCheck functions
 // unlockCheck functions
 // unlockCheck functions
+function closeBoxes(){
+  selectSimSize.style.height = '0vw';
+  selectedNo.style.height = '0vw';
+  notSure.style.height = '0vw';
+}
+// yes
 checkedYesID.addEventListener('click',()=>{
+  closeBoxes();
   selectSimSize.style.height = '24vw';
+});
+
+// no
+checkedNoID.addEventListener('click',()=>{
+  closeBoxes();
+  selectedNo.style.height = '16vw';
+});
+
+// not sure
+checkedNotSureID.addEventListener('click',()=>{
+  closeBoxes();
+  notSure.style.height = '11vw';
 });
 
 
