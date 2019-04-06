@@ -391,110 +391,12 @@ header{
 /* plan  content */
 /* plan  content */
 /* plan  content */
-.planContent{
-  width: 100%;
-  min-height: 5vw;
-  border:1px solid red;
-}
-
-.planForm{
-  position: relative;
-  border:1px solid blue;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.planForm h2{
-  font-family: "RobotoSlab-Bold",serif;
-  font-size: 2.928vw;
-  color: black;
-  margin-bottom: 0;
-}
-
-.planForm p{
-  font-family: "RobotoSlab-Regular",serif;
-  font-size: 1.171vw;
-  margin: 0;
-}
-
-input[type='radio']{
-  width: 1.8vw;
-  height: 1.8vw;
-  display: inline-block;
-}
-
-.divCheckbox{
-  margin-bottom: 2vw;
-}
-
-#checkedNoDiv p{
-  margin: 2vw;
-}
-#checkedNoDiv,#checkedNotSureDiv {
-  transition: 1s;
-  height: 0vw;
-  overflow: hidden;
-  width: 30.344vw;
-  background-color: #ffd56c;
-  text-align: center;
-}
-
-#blueTriangle{
-  background: transparent;
-  transition: 0.5s;
-  width: 0;
-  height: 0;
-  border: 3vw solid blue;
-  border-bottom: 3vw solid transparent;
-  border-left:  3vw solid transparent;
-  border-right: 3vw solid transparent;
-  border-radius: 1vw;
-}
-
-#blueTriangle:hover{
-  cursor: pointer;
-  filter: brightness(250%);
-}
-
-#simSizeCheck{
-  overflow: hidden;
-  transition: 1s;
-  height: 0vw;
-  border: 1px solid yellow;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.phoneModelCheckDiv{
-  background-color: rgb(239,239,239);
-  padding: 1vw;
-}
-
-.travelDates{
-}
-
-.travelDates input{
-  display: inline;
-  margin: 2vw;
-}
-
-.travelDates span{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  width: 2vw;
-  height: 2vw;
-  background-color: rgb(239,239,239);
-}
 
 /* planContentBox test*/
 /* planContentBox test*/
 /* planContentBox test*/
 .planContentBox{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   position: relative;
   margin-top: 2vw;
   margin-left: 50%;
