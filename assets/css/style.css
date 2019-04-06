@@ -67,6 +67,80 @@ header{
   top:1.246vw;
 }
 
+.requestCallback {
+  transition: 1s;
+  text-align: center;
+  border-radius: 5vw;
+  z-index: 3;
+  position: absolute;
+  top: 5vw;
+  width: 15vw;
+  right: 5.8vw;
+  background-color: rgb(220,220,220,0.81);
+  color: rgb(95,104,211);
+  height: 3vw;
+  overflow: hidden;
+}
+
+.requestCallback:hover{
+  filter: brightness(110%);
+}
+
+.requestCallback p:hover{
+  cursor: pointer;
+}
+
+.requestCallback p{
+  transition: 1s;
+  font-size: 1.2vw;
+  padding: 0.7vw;
+  margin: 0;
+}
+.requestCallback input {
+    border: none;
+    background-color: rgb(221,221,221);
+    width: 75%;
+    padding-left: 5%;
+    height: 3vw;
+    margin: 0.5vw;
+    border-radius: 5vw;
+    font-size: 1.4vw;
+}
+
+.requestCallback ::placeholder {
+  /* padding-left: 0; */
+}
+
+
+.requestCallbackClicked {
+  background-color: rgb(95,104,211);
+  right: 2.8vw;
+  border-radius: 0;
+  width: 23vw;
+  height: 29vw;
+  box-shadow: 0px 0px 7.714vw 6.1vw rgba(0,0,0,0.08);
+}
+.requestCallbackClicked p {
+    font-size: 1.8vw;
+    background-color: rgb(6,215,156);
+    margin: 0;
+    margin-bottom: 0.5vw;
+    padding-top: 1vw;
+    color: white;
+    padding-bottom: 1vw;
+    border-bottom: 1px solid white;
+}
+
+.callMeSubmit{
+  margin-top: 2vw !important;
+  width: 54% !important;
+}
+.callMeSubmit:hover{
+  cursor: pointer;
+}
+
+
+
 .visitingTheLand{
   background-color: rgb(6,215,156);
   position: absolute;
@@ -396,7 +470,7 @@ header{
 /* planContentBox test*/
 /* planContentBox test*/
 .planContentBox{
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   position: relative;
   margin-top: 2vw;
   margin-left: 50%;
@@ -408,9 +482,9 @@ header{
 }
 
 .lockedCheckContainer{
-  transition: 1s;
+  transition: 3s;
   overflow: hidden;
-  height: 0vw;
+  max-height: 0vw;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -448,8 +522,8 @@ header{
 
 /* simsize */
 .selectSimSize{
-  transition: 1s;
-  height: 0vw;
+  transition: 3s;
+  max-height: 0vw;
   overflow: hidden;
   /* height: 24vw */
   display: flex;
@@ -461,6 +535,12 @@ header{
   margin: 0;
   margin-bottom: 1vw;
   margin-top: -0.2vw;
+}
+
+.ifYouAreUnsure{
+  background-color: rgb(239,239,239);
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 /* selectNO */

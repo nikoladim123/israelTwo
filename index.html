@@ -9,6 +9,20 @@
     <header>
       <a href="#"><img class="logo" src="assets/images/logo.png" alt=""></a>
       <a href="#" class="phoneNumber">1-800-300-3100</a>
+
+      <div id="requestCallback" class="requestCallback ">
+        <p id="requestP" class="regular">Request a callback</p>
+        <div id="callBackForm" class="callBackForm">
+          <form class="requestForm" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="Name">
+            <input type="text" name="" value="" placeholder="Phone">
+            <input type="text" name="" value="" placeholder="Email">
+            <input type="text" name="" value="" placeholder="Subject"> <br>
+            <input class="regular callMeSubmit" type="submit" name="" value="Call me">
+          </form>
+        </div>
+      </div>
+
       <div class="visitingTheLand">
         <div class="logoIconBlueContainer">
           <a href="#"><img class="logoIconBlue" src="assets/images/logoIcon.png" alt=""></a>
@@ -118,42 +132,58 @@
                   <h4 class="regular">I'm not sure</h4>
                 </label>
               </div>
+
+              <div id="selectSimSize" class="selectSimSize">
+                <h2 class="bold great">Select your sim card</h2>
+                <label class="lockedCheckLabel">
+                  <input id="simFullSize" type="radio" name="simCard">
+                  <span class="checkmark"></span>
+                  <h4 class="bold">Full size sim</h2>
+                </label>
+
+                <label class="lockedCheckLabel">
+                  <input id="simMicro" type="radio" name="simCard">
+                  <span class="checkmark"></span>
+                  <h4 class="bold">Micro sim</h2>
+                </label>
+
+                <h5>(good for Micro- good for iPhone 4 and Galaxy S3 S4 S5)</h5>
+                <label class="lockedCheckLabel">
+                  <input id="nanoSim" type="radio" name="simCard">
+                  <span class="checkmark"></span>
+                  <h4 class="bold">Nano sim</h2>
+                </label>
+
+                <h5>(good for Micro- good for iPhone 4 and Galaxy S3 S4 S5)</h5>
+                <div class="ifYouAreUnsure">
+                  <h2 class="bold">If you are not sure what sim you will need <br>
+                  please search for your phone model <a href="#">here</a> </h2>
+                </div>
+              </div>
+
+              <div id="selectedNo" class="selectedNo">
+                <h4 class="regular">unfortunately a sim wonʼt work in your phone until itʼs unlocked,
+                    feel free to rent a device from <br>
+                    <a href="#">here</a> <br>
+                    You may use coupon code <b>BR10</b> for an exclusive <b>Birthright</b> discount</h4>
+              </div>
+
+              <div id="notSure" class="selectedNo">
+                <h4 class="regular">Please call your carrier to find out <br>
+                if phone is unlocked </h4>
+                <h5 class="light">(Most Version 4G phones come unlocked)</h5>
+              </div>
+
+              <!-- date arivals inside-->
+              <div class="dateArivals">
+                  <input type="date" name="" value="">
+                <input type="date" name="" value="">
+              </div>
+              <!-- date arivals inside-->
+
             </div>
 
-            <div id="selectSimSize" class="selectSimSize">
-              <h2 class="bold great">Select your sim card</h2>
-              <label class="lockedCheckLabel">
-                <input id="simFullSize" type="radio" name="simCard">
-                <span class="checkmark"></span>
-                <h4 class="bold">Full size sim</h2>
-              </label>
 
-              <label class="lockedCheckLabel">
-                <input id="simMicro" type="radio" name="simCard">
-                <span class="checkmark"></span>
-                <h4 class="bold">Micro sim</h2>
-              </label>
-              <h5>(good for Micro- good for iPhone 4 and Galaxy S3 S4 S5)</h5>
-              <label class="lockedCheckLabel">
-                <input id="nanoSim" type="radio" name="simCard">
-                <span class="checkmark"></span>
-                <h4 class="bold">Nano sim</h2>
-              </label>
-              <h5>(good for Micro- good for iPhone 4 and Galaxy S3 S4 S5)</h5>
-            </div>
-
-            <div id="selectedNo" class="selectedNo">
-              <h4 class="regular">unfortunately a sim wonʼt work in your phone until itʼs unlocked,
-                  feel free to rent a device from <br>
-                  <a href="#">here</a> <br>
-                  You may use coupon code <b>BR10</b> for an exclusive <b>Birthright</b> discount</h4>
-            </div>
-
-            <div id="notSure" class="selectedNo">
-              <h4 class="regular">Please call your carrier to find out <br>
-              if phone is unlocked </h4>
-              <h5 class="light">(Most Version 4G phones come unlocked)</h5>
-            </div>
 
           </div>
           <!-- test plan content end-->

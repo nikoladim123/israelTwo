@@ -33,21 +33,36 @@ var nanoSim = document.getElementById('nanoSim');
 var selectedNo = document.getElementById('selectedNo');
   //selected not sure box
 var notSure = document.getElementById('notSure');
+  //callback
+var requestCallback = document.getElementById('requestCallback');
+var requestP = document.getElementById('requestP');
 
+// requestCallback
+// requestCallback
+// requestCallback
+var reqMod = 1;
+requestP.addEventListener('click',()=>{
+  if(reqMod % 2 === 1){
+    requestCallback.className += " requestCallbackClicked";
+  }else{
+    requestCallback.classList.remove("requestCallbackClicked");
+  }
+  reqMod++;
+})
 
 // plan big box click
 // plan big box click
 // plan big box click
 basicPlan.addEventListener('click',()=>{
   planObject.plan = 'basicPlan'
-  lockedCheckContainer.style.height = '27vw';
+  lockedCheckContainer.style.maxHeight = '1000vw';
   setTimeout(function () {
     window.scrollBy(0,window.innerWidth/100 * 25);
   }, 300);
 });
 
 premiumPlan.addEventListener('click',()=>{
-  lockedCheckContainer.style.height = '27vw';
+  lockedCheckContainer.style.maxHeight = '1000vw';
   setTimeout(function () {
     window.scrollBy(0,window.innerWidth/100 * 25);
   }, 300);
@@ -55,7 +70,7 @@ premiumPlan.addEventListener('click',()=>{
 });
 
 platinumPlan.addEventListener('click',()=>{
-  lockedCheckContainer.style.height = '27vw';
+  lockedCheckContainer.style.maxHeight = '1000vw';
   setTimeout(function () {
     window.scrollBy(0,window.innerWidth/100 * 25);
   }, 300);
@@ -66,14 +81,14 @@ platinumPlan.addEventListener('click',()=>{
 // unlockCheck functions
 // unlockCheck functions
 function closeBoxes(){
-  selectSimSize.style.height = '0vw';
+  selectSimSize.style.maxHeight = '0vw';
   selectedNo.style.height = '0vw';
   notSure.style.height = '0vw';
 }
 // yes
 checkedYesID.addEventListener('click',()=>{
   closeBoxes();
-  selectSimSize.style.height = '24vw';
+  selectSimSize.style.maxHeight = '1000vw';
 });
 
 // no
