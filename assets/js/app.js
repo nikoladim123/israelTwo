@@ -36,6 +36,22 @@ var notSure = document.getElementById('notSure');
   //callback
 var requestCallback = document.getElementById('requestCallback');
 var requestP = document.getElementById('requestP');
+  // dates ID;
+var dateArivals = document.getElementById('dateArivals');
+  //span plan
+var spanPalnID = document.getElementById('spanPalnID');
+  // MoreDevices
+var simCardContainer = document.getElementsByClassName('simCardContainer')[0];
+var MoreDevices = document.getElementById('MoreDevices');
+
+
+// more devices Hover Effect
+// more devices Hover Effect
+// more devices Hover Effect
+simCardContainer.addEventListener('mouseenter',()=>{
+  MoreDevices.style.opacity = '1';
+});
+
 
 // requestCallback
 // requestCallback
@@ -53,12 +69,17 @@ requestP.addEventListener('click',()=>{
 // plan big box click
 // plan big box click
 // plan big box click
-basicPlan.addEventListener('click',()=>{
-  planObject.plan = 'basicPlan'
+basicPlan.addEventListener('click',(e)=>{
+  planObject.plan = 'basicPlan';
   lockedCheckContainer.style.maxHeight = '1000vw';
   setTimeout(function () {
     window.scrollBy(0,window.innerWidth/100 * 25);
   }, 300);
+
+  planSizeBack();
+  basicPlan.style.transform = 'scale(1.05)';
+  basicPlan.style.zIndex = '1';
+  spanPalnID.innerHTML = "basic";
 });
 
 premiumPlan.addEventListener('click',()=>{
@@ -66,7 +87,12 @@ premiumPlan.addEventListener('click',()=>{
   setTimeout(function () {
     window.scrollBy(0,window.innerWidth/100 * 25);
   }, 300);
-  planObject.plan = 'premiumPlan'
+
+  planSizeBack();
+  planObject.plan = 'premiumPlan';
+  premiumPlan.style.transform = 'scale(1.05)';
+  premiumPlan.style.zIndex = '1';
+  spanPalnID.innerHTML = "premium";
 });
 
 platinumPlan.addEventListener('click',()=>{
@@ -74,8 +100,22 @@ platinumPlan.addEventListener('click',()=>{
   setTimeout(function () {
     window.scrollBy(0,window.innerWidth/100 * 25);
   }, 300);
-  planObject.plan = 'platinumPlan'
+
+  planSizeBack();
+  planObject.plan = 'platinumPlan';
+  platinumPlan.style.transform = 'scale(1.05)';
+  platinumPlan.style.zIndex = '1';
+  spanPalnID.innerHTML = "platinum";
 });
+
+function planSizeBack(){
+  basicPlan.style.transform = 'scale(1)';
+  basicPlan.style.zIndex = 'auto';
+  premiumPlan.style.transform = 'scale(1)';
+  premiumPlan.style.zIndex = 'auto';
+  platinumPlan.style.transform = 'scale(1)';
+  platinumPlan.style.zIndex = 'auto';
+}
 
 // unlockCheck functions
 // unlockCheck functions
@@ -84,11 +124,18 @@ function closeBoxes(){
   selectSimSize.style.maxHeight = '0vw';
   selectedNo.style.height = '0vw';
   notSure.style.height = '0vw';
+  dateArivals.style.maxHeight = '0vw';
+  simFullSize.checked = false;
+  simMicro.checked = false;
+  nanoSim.checked = false;
 }
 // yes
 checkedYesID.addEventListener('click',()=>{
   closeBoxes();
-  selectSimSize.style.maxHeight = '1000vw';
+  selectSimSize.style.maxHeight = '50vw';
+  setTimeout(function () {
+    window.scrollBy(0,window.innerWidth/100 * 25);
+  }, 300);
 });
 
 // no
@@ -103,6 +150,27 @@ checkedNotSureID.addEventListener('click',()=>{
   notSure.style.height = '11vw';
 });
 
+// select sim size fun
+// select sim size fun
+// select sim size fun
+simFullSize.addEventListener('click',()=>{
+  dateArivals.style.maxHeight = '80vw';
+  scroling();
+});
+simMicro.addEventListener('click',()=>{
+  dateArivals.style.maxHeight = '80vw';
+  scroling();
+});
+nanoSim.addEventListener('click',()=>{
+  dateArivals.style.maxHeight = '80vw';
+  scroling();
+});
+
+function scroling(){
+  setTimeout(function () {
+    window.scrollBy(0,window.innerWidth/100 * 25);
+  }, 300);
+}
 
 
 
